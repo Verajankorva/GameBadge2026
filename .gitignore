@@ -1,0 +1,5 @@
+MazeGame/.vsconfig
+*.csproj
+*.sln
+MazeGame/Library/
+MazeGame/Logs/
