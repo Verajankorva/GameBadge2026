@@ -1,6 +1,17 @@
 using System.Collections.Generic;
+using System.Diagnostics;
 using Unity.Mathematics;
 using UnityEngine;
+
+public class ExitCell : Cell
+{
+    public override GameObject CreateInstance(int mazeWidth)
+    {
+        m_instacedGo = GameObject.Instantiate<GameObject>(m_cellData.m_exitPieces[0]);
+        base.CreateInstance(mazeWidth);
+        return m_instacedGo;
+    }
+}
 
 public class RoomCell : Cell
 {
@@ -29,7 +40,7 @@ public class Cell
     public GameObject m_instacedGo = null;
     public int m_xindex = 0;
     public int m_yindex = 0;
-
+    public bool m_key = false;
     public Cell()
     {
 
@@ -42,13 +53,29 @@ public class Cell
         cell.m_yindex = this.m_yindex;
         cell.m_cellData = this.m_cellData;
         cell.m_size = this.m_size;
+        cell.m_key = this.m_key;
         return cell;
     }
 
-    private void ConfigureInstance(GameObject instance)
+    public ExitCell ToExitCell()
+    {
+        ExitCell cell = new ExitCell();
+        cell.m_xindex = this.m_xindex;
+        cell.m_yindex = this.m_yindex;
+        cell.m_cellData = this.m_cellData;
+        cell.m_size = this.m_size;
+        cell.m_key = this.m_key;
+        return cell;
+    }
+
+    private void ConfigureInstance(GameObject instance, bool isKey=false)
     {
         MeshFilter mf = instance.GetComponentInChildren<MeshFilter>();
         Mesh msh = mf.sharedMesh;
+        if (!isKey)
+        {
+            this.m_size = new Vector2(msh.bounds.size.x, msh.bounds.size.y);
+        }
         instance.transform.position = new Vector3(
             m_xindex * m_size.x,
             0f,
@@ -58,6 +85,11 @@ public class Cell
     virtual public GameObject CreateInstance(int mazeWidth)
     {
         ConfigureInstance(m_instacedGo);
+        if (this.m_key)
+        {
+            GameObject go = GameObject.Instantiate<GameObject>(m_cellData.m_key);
+            ConfigureInstance(go, isKey:true);
+        }
         return m_instacedGo;
     }
 }
@@ -82,9 +114,59 @@ public class Maze : MonoBehaviour
     public void GenerateMaze(int w, int h, int s)
     {
         this.m_seed = s;
+        Stopwatch sw = new Stopwatch();
+        sw.Start();
         InitMaze(w, h);
         IterateMaze();
+        sw.Stop();
+        CreateExit();
+        CreateKey();
         CrateInstances();
+        UnityEngine.Debug.Log(string.Format("Maze generated in {0}ms", sw.ElapsedMilliseconds));
+    }
+
+    private void CreateExit()
+    {
+        int c = 0;
+        UnityEngine.Random.InitState(m_seed);
+        while (true)
+        {
+            int r = UnityEngine.Random.Range(0, m_maze.Length);
+            if (m_maze[r].GetType() !=  typeof(WallCell))
+            {
+                m_maze[r] = m_maze[r].ToExitCell();
+                break;
+            }
+
+            if (c>100)
+            {
+                break;
+            }
+            c++;
+        }
+    }
+
+    private void CreateKey()
+    {
+        int c = 0;
+        UnityEngine.Random.InitState(m_seed);
+        while (true)
+        {
+            int r = UnityEngine.Random.Range(0, m_maze.Length);
+            if (m_maze[r].GetType() != typeof(WallCell))
+            {
+                if (m_maze[r].GetType() != typeof(ExitCell))
+                {
+                    m_maze[r].m_key = true;
+                    break;
+                }
+            }
+            if (c > 100)
+            {
+                break;
+            }
+            c++;
+        }
     }
 
     private void CrateInstances()
@@ -107,7 +189,7 @@ public class Maze : MonoBehaviour
 
     private bool IsRoomAlreadyFound(int index)
     {
-        for (int i = 0; i < m_indices.Length; ++i)
+        for (int i = 0; i < m_indiciesCount; ++i)
         {
             if (m_indices[i] == index)
             {
@@ -180,6 +262,7 @@ public class Maze : MonoBehaviour
 
     private void FindRooms(int index)
     {
+        m_indiciesCount = 0;
         Cell c = this.m_maze[index];
         if (c.GetType() != typeof(WallCell))
         {

@@ -16,3 +16,6 @@ MonoBehaviour:
   - {fileID: 3889619673487862922, guid: bcec4aeb92d5f8e4896872e79cf689ac, type: 3}
   m_roomPieces:
   - {fileID: 7693534318214489614, guid: 46d7fa09070bcf44dbb5f118a26ad0c0, type: 3}
+  m_exitPieces:
+  - {fileID: 1238262713738089469, guid: 39e08c0568642264e96e6caf7ea6ee2b, type: 3}
+  m_key: {fileID: 8059590472628100810, guid: 9393db50ebf30f54f807252ac1383db0, type: 3}
