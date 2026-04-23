@@ -100,3 +100,4 @@ InitTestScene*.unity*
 MazeGame/Library
 MazeGame/Temp/
 MazeGame/obj/
+MazeGame/.vsconfig
