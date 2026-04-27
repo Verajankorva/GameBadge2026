@@ -3,25 +3,25 @@ using StateMachine.Core;
 using StateMachine.States;
 using UnityEngine;
 
-namespace StateMachine
+namespace MazeGame.Components.Controllers
 {
-    public class StateMachineComponent : MonoBehaviour
+    public class GameController : BaseController
     {
+        private MazeGame.Core.Input m_input = null;
         private StateMachine.Core.StateMachine m_stateMachine = null;
 
-        private void Start()
+        public override void Start()
         {
+            base.Start();
+            m_input = MazeGame.Core.Input.GetInstance();
+            Game.m_input = m_input;
             SetupStateMachine();
-        }
-
-        private void Update()
-        {
-            m_stateMachine.UpdateStateMachine();
+            Game.m_gameController = this;
         }
 
         private void SetupStateMachine()
         {
-            m_stateMachine = new Core.StateMachine();
+            m_stateMachine = new StateMachine.Core.StateMachine();
             Game.m_gameStateMachine = m_stateMachine;
             InitState initState = new InitState();
             LoadingState loadingState = new LoadingState();
@@ -30,6 +30,11 @@ namespace StateMachine
             initState.AddOutputConnection(loadingConnection);
             m_stateMachine.m_currentState = initState;
             m_stateMachine.StartStateMachine();
+        }
+
+        private void Update()
+        {
+            m_stateMachine.UpdateStateMachine();
         }
     }
 }
