@@ -6,7 +6,7 @@ namespace StateMachine.States
 {
     public class InitState : BaseState
     {
-        public InitState()
+        public InitState(StateMachine.Core.StateMachine fsm) : base(fsm)
         {
 
         }
