@@ -1,6 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
+using MazeGame.Maze;
 
 public class MazeEditor : EditorWindow
 {

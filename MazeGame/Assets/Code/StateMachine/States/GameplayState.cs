@@ -16,10 +16,18 @@ namespace StateMachine.States
             Game.m_input.OnMove += M_input_OnMove;
             Game.m_input.OnLook += M_input_OnLook;
             Game.m_levelController.Active();
+            Game.m_enemy.m_stateMachine.StartStateMachine();
+        }
+
+        public override void UpdateState()
+        {
+            base.UpdateState();
+            Game.m_enemy.Update();
         }
 
         public override void StopState()
         {
+            base.StopState();
             Game.m_input.OnMove -= M_input_OnMove;
             Game.m_input.OnLook -= M_input_OnLook;
         }

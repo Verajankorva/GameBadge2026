@@ -18,6 +18,7 @@ namespace StateMachine.Core
 
         public void AddParameter(string name, object value)
         {
+            // TODO: Fix, check if parameter already exists. If it does, reuse, don't create a new one.
             if (value.GetType() == typeof(string))
             {
                 ParameterString p = new ParameterString(name, (string)value);

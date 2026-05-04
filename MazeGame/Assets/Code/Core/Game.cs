@@ -1,7 +1,7 @@
+using MazeGame.Components.Controllers;
+using MazeGame.Maze;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using MazeGame.Components.Controllers;
-using StateMachine.Core;
 
 namespace MazeGame.Core
 {
@@ -12,6 +12,8 @@ namespace MazeGame.Core
         public static GameController m_gameController = null;
         public static LevelController m_levelController = null;
         public static Player m_player = null;
+        public static Enemy m_enemy = null;
+        public static MazeGame.Maze.Maze m_maze = null;
 
         public static BaseController GetController(Scene s)
         {
