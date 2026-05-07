@@ -51,6 +51,8 @@ namespace StateMachine.States
                             else
                             {
                                 cells[i] = new WallCell();
+                                MeshRenderer mr = comps[i].gameObject.GetComponentInChildren<MeshRenderer>();
+                                mr.sharedMaterial.SetColor("_Color", Settings.CreateInstance().m_color);
                             }
                             cells[i].m_instacedGo = comps[i].gameObject;
                         }

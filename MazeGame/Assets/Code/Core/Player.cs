@@ -13,6 +13,7 @@ namespace MazeGame.Core
         public void TurnPlayer(Vector2 mouseDelta)
         {
             m_characterInstance.transform.Rotate(0, mouseDelta.x * 0.2f, 0f);
+            Game.m_gameData.m_playerRotation = m_characterInstance.transform.rotation;
         }
 
         public void Move(Vector2 wasd)
@@ -23,6 +24,7 @@ namespace MazeGame.Core
             {
                 m_rb.AddForce(f, ForceMode.Force);
             }
+            Game.m_gameData.m_playerPosition = m_rb.position;
         }
     }
 }

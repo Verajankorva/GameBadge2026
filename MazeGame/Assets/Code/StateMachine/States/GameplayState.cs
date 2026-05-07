@@ -17,6 +17,11 @@ namespace StateMachine.States
             Game.m_input.OnLook += M_input_OnLook;
             Game.m_levelController.Active();
             Game.m_enemy.m_stateMachine.StartStateMachine();
+            Game.m_gameData.m_scene = Game.m_levelController.gameObject.scene;
+            // TODO: Handle this in load save game state.
+            Game.m_gameData.LoadData();
+            Game.m_player.m_rb.transform.position = Game.m_gameData.m_playerPosition;
+            Game.m_player.m_rb.transform.rotation = Game.m_gameData.m_playerRotation;
         }
 
         public override void UpdateState()

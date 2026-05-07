@@ -7001,7 +7001,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 6b6937e7465946643a34122318a91442, type: 3}
+  - {fileID: 2100000, guid: f020c22fa8171c14f86eaafd6250eae3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -53015,6 +53015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a3a0d00f776a34099cfecedfdf7bf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MazeGame.Maze.Maze
+  m_indiciesCount: 0
   m_iterations: 1000
   m_cellData: {fileID: 11400000, guid: a4f9f34d80bda3947b533747287f975a, type: 2}
 --- !u!1 &1613872079
