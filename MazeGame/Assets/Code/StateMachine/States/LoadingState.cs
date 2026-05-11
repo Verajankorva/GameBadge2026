@@ -17,6 +17,8 @@ namespace StateMachine.States
         public override void StartState()
         {
             base.StartState();
+            Game.m_dialogueDatabase = new DialogueDatabase();
+            Game.m_dialogueDatabase.ExecuteSQL("select * from dialogue where id=3");
             SceneManager.LoadSceneAsync("Level", LoadSceneMode.Additive);
         }
 
