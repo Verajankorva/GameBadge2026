@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349.3334
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 338}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 102
+  controlID: 39
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -1473,9 +1473,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.08451283, y: -0.85423756, z: 0.13836218, w: 0.4939552}
   m_Size:
-    m_Target: 1.5812348
+    m_Target: 1.5100793
     speed: 2
-    m_Value: 1.5812348
+    m_Value: 1.5100793
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1550,8 +1550,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs:
-      - m_Data: 41332
+      m_SelectedIDs: []
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
@@ -1788,7 +1787,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Code/Editor
+    - Assets/Resources/Lua
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1798,28 +1797,26 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Code/Editor
+  - Assets/Resources/Lua
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Metropolia\Game Badges - Coding_Game Engines\project\MazeGame
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 27.333313}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 82282
+    - m_Data: 62168
     m_LastClickedID:
-      m_Data: 82282
+      m_Data: 62168
     m_ExpandedIDs:
     - m_Data: 0
     - m_Data: 45692
-    - m_Data: 45694
     - m_Data: 45696
     - m_Data: 45698
     - m_Data: 45700
     - m_Data: 45702
     - m_Data: 45704
-    - m_Data: 45706
     - m_Data: 45708
     - m_Data: 45710
     - m_Data: 45712
@@ -1829,7 +1826,7 @@ MonoBehaviour:
     - m_Data: 45720
     - m_Data: 45722
     - m_Data: 45724
-    - m_Data: 45726
+    - m_Data: 46058
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
