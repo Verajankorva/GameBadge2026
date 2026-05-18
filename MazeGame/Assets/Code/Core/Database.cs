@@ -1,36 +1,20 @@
 using UnityEngine;
 using Mono.Data.Sqlite;
+using NUnit.Framework;
 
 namespace MazeGame.Core
 {
     public class BaseDatabase
     {
-        private string m_dbName = "";
+        public string m_dbName = "";
         private string m_dbFile = "";
-        private SqliteConnection m_connection = null;
+        public SqliteConnection m_connection = null;
 
         public BaseDatabase(string dbName, string dbFile)
         {
             m_dbName = dbName;
             m_dbFile = dbFile;
             m_connection = new SqliteConnection(dbFile);
-        }
-
-        public void ExecuteSQL(string sql)
-        {
-            m_connection.Open();
-            using (SqliteCommand cmd = m_connection.CreateCommand())
-            {
-                cmd.CommandText = sql;
-                using (SqliteDataReader dr = cmd.ExecuteReader())
-                {
-                    if (dr.Read())
-                    {
-                        Debug.Log(dr["fin"]);
-                    }
-                }
-            }
-            m_connection.Close();
         }
     }
 
@@ -40,6 +24,27 @@ namespace MazeGame.Core
             string dbName = "dialogue",
             string dbFile = "URI=file:Assets/Resources/dialogue.db") : base(dbName, dbFile)
         {
+        }
+
+        public string ReadDialogueLine(int id)
+        {
+            string line = "";
+            m_connection.Open();
+            using (SqliteCommand cmd = m_connection.CreateCommand())
+            {
+                Settings set = Settings.CreateInstance();
+                string l = set.m_language;
+                cmd.CommandText = string.Format("select {0} from {1} where id={2}", l, this.m_dbName, id.ToString());
+                using(SqliteDataReader reader = cmd.ExecuteReader())
+                {
+                    if(reader.Read())
+                    {
+                        line = reader[l].ToString();
+                    }
+                }
+            }
+            m_connection.Close();
+            return line;
         }
     }
 }

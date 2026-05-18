@@ -35,5 +35,10 @@ namespace MazeGame.Components
         {
             Game.m_input.InputLook(v.Get<Vector2>());
         }
+
+        public void OnAccept(InputValue v)
+        {
+            Game.m_input.InputAccept();
+        }
     }
 }

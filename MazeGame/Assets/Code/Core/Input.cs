@@ -10,6 +10,9 @@ namespace MazeGame.Core
         public delegate void OnLookHandler(Vector2 v);
         public event OnLookHandler OnLook;
 
+        public delegate void OnAcceptHandler();
+        public event OnAcceptHandler OnAccept;
+
         public static Input instance = null;
 
         private Input()
@@ -34,6 +37,11 @@ namespace MazeGame.Core
         public void InputLook(Vector2 v)
         {
             OnLook?.Invoke(v);
+        }
+
+        public void InputAccept()
+        {
+            OnAccept?.Invoke();
         }
     }
 }

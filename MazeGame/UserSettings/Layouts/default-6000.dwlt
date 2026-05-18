@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349.3334
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 338}
   m_MaxSize: {x: 10000, y: 10000}
@@ -1421,9 +1421,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 40.71062, y: 0.78613406, z: 14.1695595}
+    m_Target: {x: 784.07983, y: 412.38583, z: 18.682009}
     speed: 2
-    m_Value: {x: 40.71062, y: 0.78613406, z: 14.1695595}
+    m_Value: {x: 784.07983, y: 412.38583, z: 18.682009}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1469,13 +1469,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.08460663, y: -0.85518575, z: 0.13851576, w: 0.49450347}
+    m_Target: {x: 0.14732367, y: 0.09739295, z: -0.018442513, w: 0.98526996}
     speed: 2
-    m_Value: {x: 0.08451283, y: -0.85423756, z: 0.13836218, w: 0.4939552}
+    m_Value: {x: 0.14715551, y: 0.09728178, z: -0.018421462, w: 0.98414534}
   m_Size:
-    m_Target: 1.5100793
+    m_Target: 310.05927
     speed: 2
-    m_Value: 1.5100793
+    m_Value: 310.05927
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1550,11 +1550,486 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: []
+      m_SelectedIDs:
+      - m_Data: 41332
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
+      - m_Data: -39304
+      - m_Data: -37338
+      - m_Data: -37090
+      - m_Data: -26724
+      - m_Data: -25630
+      - m_Data: -20000
+      - m_Data: -19694
+      - m_Data: -19656
+      - m_Data: -19072
+      - m_Data: -18426
+      - m_Data: -12712
+      - m_Data: -11486
+      - m_Data: -10838
+      - m_Data: -6888
+      - m_Data: -6784
+      - m_Data: -4462
+      - m_Data: -4264
       - m_Data: -1294
+      - m_Data: 69790
+      - m_Data: 69862
+      - m_Data: 69866
+      - m_Data: 69886
+      - m_Data: 77378
+      - m_Data: 77386
+      - m_Data: 77402
+      - m_Data: 77434
+      - m_Data: 77442
+      - m_Data: 77466
+      - m_Data: 77474
+      - m_Data: 77482
+      - m_Data: 77522
+      - m_Data: 77530
+      - m_Data: 77554
+      - m_Data: 77562
+      - m_Data: 77570
+      - m_Data: 77602
+      - m_Data: 77610
+      - m_Data: 77626
+      - m_Data: 77666
+      - m_Data: 77674
+      - m_Data: 77690
+      - m_Data: 77722
+      - m_Data: 77754
+      - m_Data: 77770
+      - m_Data: 77778
+      - m_Data: 77794
+      - m_Data: 77818
+      - m_Data: 77842
+      - m_Data: 77866
+      - m_Data: 77874
+      - m_Data: 77906
+      - m_Data: 77930
+      - m_Data: 77954
+      - m_Data: 77962
+      - m_Data: 77970
+      - m_Data: 77978
+      - m_Data: 78002
+      - m_Data: 78026
+      - m_Data: 78038
+      - m_Data: 78046
+      - m_Data: 78062
+      - m_Data: 78078
+      - m_Data: 78094
+      - m_Data: 78118
+      - m_Data: 78142
+      - m_Data: 78158
+      - m_Data: 78166
+      - m_Data: 78190
+      - m_Data: 78198
+      - m_Data: 78206
+      - m_Data: 78222
+      - m_Data: 78230
+      - m_Data: 78238
+      - m_Data: 78246
+      - m_Data: 78270
+      - m_Data: 78294
+      - m_Data: 78310
+      - m_Data: 78334
+      - m_Data: 78350
+      - m_Data: 78358
+      - m_Data: 78374
+      - m_Data: 78382
+      - m_Data: 78398
+      - m_Data: 78414
+      - m_Data: 78430
+      - m_Data: 78470
+      - m_Data: 78486
+      - m_Data: 78510
+      - m_Data: 78550
+      - m_Data: 78582
+      - m_Data: 78590
+      - m_Data: 78630
+      - m_Data: 78638
+      - m_Data: 78646
+      - m_Data: 78654
+      - m_Data: 78670
+      - m_Data: 78678
+      - m_Data: 78694
+      - m_Data: 78718
+      - m_Data: 78726
+      - m_Data: 78734
+      - m_Data: 78742
+      - m_Data: 78774
+      - m_Data: 78838
+      - m_Data: 78862
+      - m_Data: 78878
+      - m_Data: 78902
+      - m_Data: 78910
+      - m_Data: 78926
+      - m_Data: 78934
+      - m_Data: 78950
+      - m_Data: 78966
+      - m_Data: 78982
+      - m_Data: 79014
+      - m_Data: 79022
+      - m_Data: 79030
+      - m_Data: 79038
+      - m_Data: 79046
+      - m_Data: 79054
+      - m_Data: 79070
+      - m_Data: 79102
+      - m_Data: 79110
+      - m_Data: 79118
+      - m_Data: 79158
+      - m_Data: 79198
+      - m_Data: 79222
+      - m_Data: 79254
+      - m_Data: 79302
+      - m_Data: 79310
+      - m_Data: 79318
+      - m_Data: 79326
+      - m_Data: 79342
+      - m_Data: 79350
+      - m_Data: 79366
+      - m_Data: 79374
+      - m_Data: 79382
+      - m_Data: 79390
+      - m_Data: 79398
+      - m_Data: 79406
+      - m_Data: 79446
+      - m_Data: 79454
+      - m_Data: 79470
+      - m_Data: 79494
+      - m_Data: 79518
+      - m_Data: 79534
+      - m_Data: 79542
+      - m_Data: 79550
+      - m_Data: 79566
+      - m_Data: 79574
+      - m_Data: 79590
+      - m_Data: 79622
+      - m_Data: 79630
+      - m_Data: 79646
+      - m_Data: 79662
+      - m_Data: 79670
+      - m_Data: 79678
+      - m_Data: 79702
+      - m_Data: 79726
+      - m_Data: 79734
+      - m_Data: 79742
+      - m_Data: 79750
+      - m_Data: 79766
+      - m_Data: 79782
+      - m_Data: 79798
+      - m_Data: 79838
+      - m_Data: 79846
+      - m_Data: 79854
+      - m_Data: 79870
+      - m_Data: 79894
+      - m_Data: 79902
+      - m_Data: 79926
+      - m_Data: 79942
+      - m_Data: 79950
+      - m_Data: 79958
+      - m_Data: 79982
+      - m_Data: 79990
+      - m_Data: 79998
+      - m_Data: 80022
+      - m_Data: 80038
+      - m_Data: 80046
+      - m_Data: 80062
+      - m_Data: 80070
+      - m_Data: 80086
+      - m_Data: 80094
+      - m_Data: 80102
+      - m_Data: 80110
+      - m_Data: 80126
+      - m_Data: 80134
+      - m_Data: 80142
+      - m_Data: 80150
+      - m_Data: 80158
+      - m_Data: 80166
+      - m_Data: 80174
+      - m_Data: 80182
+      - m_Data: 80214
+      - m_Data: 80246
+      - m_Data: 80270
+      - m_Data: 80310
+      - m_Data: 80318
+      - m_Data: 80326
+      - m_Data: 80350
+      - m_Data: 80358
+      - m_Data: 80366
+      - m_Data: 80374
+      - m_Data: 80398
+      - m_Data: 80406
+      - m_Data: 80422
+      - m_Data: 80430
+      - m_Data: 80444
+      - m_Data: 80460
+      - m_Data: 80468
+      - m_Data: 80476
+      - m_Data: 80484
+      - m_Data: 80508
+      - m_Data: 80516
+      - m_Data: 80564
+      - m_Data: 80572
+      - m_Data: 80580
+      - m_Data: 80596
+      - m_Data: 80604
+      - m_Data: 80612
+      - m_Data: 80628
+      - m_Data: 80636
+      - m_Data: 80652
+      - m_Data: 80660
+      - m_Data: 80676
+      - m_Data: 80692
+      - m_Data: 80700
+      - m_Data: 80716
+      - m_Data: 80732
+      - m_Data: 80740
+      - m_Data: 80748
+      - m_Data: 80772
+      - m_Data: 80780
+      - m_Data: 80788
+      - m_Data: 80796
+      - m_Data: 80804
+      - m_Data: 80812
+      - m_Data: 80820
+      - m_Data: 80828
+      - m_Data: 80836
+      - m_Data: 80844
+      - m_Data: 80884
+      - m_Data: 80892
+      - m_Data: 80900
+      - m_Data: 80932
+      - m_Data: 80948
+      - m_Data: 80956
+      - m_Data: 80980
+      - m_Data: 81004
+      - m_Data: 81012
+      - m_Data: 81052
+      - m_Data: 81060
+      - m_Data: 81072
+      - m_Data: 81088
+      - m_Data: 81096
+      - m_Data: 81112
+      - m_Data: 81120
+      - m_Data: 81128
+      - m_Data: 81144
+      - m_Data: 81168
+      - m_Data: 81176
+      - m_Data: 81184
+      - m_Data: 81192
+      - m_Data: 81200
+      - m_Data: 81216
+      - m_Data: 81232
+      - m_Data: 81264
+      - m_Data: 81272
+      - m_Data: 81280
+      - m_Data: 81288
+      - m_Data: 81304
+      - m_Data: 81320
+      - m_Data: 81336
+      - m_Data: 81344
+      - m_Data: 81352
+      - m_Data: 81368
+      - m_Data: 81408
+      - m_Data: 81416
+      - m_Data: 81424
+      - m_Data: 81456
+      - m_Data: 81464
+      - m_Data: 81472
+      - m_Data: 81480
+      - m_Data: 81496
+      - m_Data: 81504
+      - m_Data: 81512
+      - m_Data: 81520
+      - m_Data: 81528
+      - m_Data: 81560
+      - m_Data: 81592
+      - m_Data: 81600
+      - m_Data: 81616
+      - m_Data: 81624
+      - m_Data: 81648
+      - m_Data: 81656
+      - m_Data: 81672
+      - m_Data: 81696
+      - m_Data: 81704
+      - m_Data: 81736
+      - m_Data: 81756
+      - m_Data: 81764
+      - m_Data: 81788
+      - m_Data: 81796
+      - m_Data: 81812
+      - m_Data: 81844
+      - m_Data: 81898
+      - m_Data: 81906
+      - m_Data: 81962
+      - m_Data: 81978
+      - m_Data: 81986
+      - m_Data: 81994
+      - m_Data: 82010
+      - m_Data: 82026
+      - m_Data: 82042
+      - m_Data: 82058
+      - m_Data: 82090
+      - m_Data: 82098
+      - m_Data: 82106
+      - m_Data: 82114
+      - m_Data: 82130
+      - m_Data: 82138
+      - m_Data: 82154
+      - m_Data: 82162
+      - m_Data: 82178
+      - m_Data: 82194
+      - m_Data: 82218
+      - m_Data: 82226
+      - m_Data: 82234
+      - m_Data: 82266
+      - m_Data: 82274
+      - m_Data: 82290
+      - m_Data: 82306
+      - m_Data: 82314
+      - m_Data: 82322
+      - m_Data: 82338
+      - m_Data: 82346
+      - m_Data: 82354
+      - m_Data: 82370
+      - m_Data: 82386
+      - m_Data: 82424
+      - m_Data: 82432
+      - m_Data: 82440
+      - m_Data: 82448
+      - m_Data: 82480
+      - m_Data: 82496
+      - m_Data: 82512
+      - m_Data: 82528
+      - m_Data: 82536
+      - m_Data: 82544
+      - m_Data: 82560
+      - m_Data: 82576
+      - m_Data: 82584
+      - m_Data: 82600
+      - m_Data: 82608
+      - m_Data: 82632
+      - m_Data: 82656
+      - m_Data: 82664
+      - m_Data: 82686
+      - m_Data: 82726
+      - m_Data: 82734
+      - m_Data: 82742
+      - m_Data: 82750
+      - m_Data: 82766
+      - m_Data: 82790
+      - m_Data: 82798
+      - m_Data: 82830
+      - m_Data: 82838
+      - m_Data: 82854
+      - m_Data: 82862
+      - m_Data: 82894
+      - m_Data: 82902
+      - m_Data: 82910
+      - m_Data: 82918
+      - m_Data: 82926
+      - m_Data: 82934
+      - m_Data: 82946
+      - m_Data: 82970
+      - m_Data: 82994
+      - m_Data: 83002
+      - m_Data: 83010
+      - m_Data: 83058
+      - m_Data: 83066
+      - m_Data: 83090
+      - m_Data: 83098
+      - m_Data: 83106
+      - m_Data: 83114
+      - m_Data: 83122
+      - m_Data: 83146
+      - m_Data: 83154
+      - m_Data: 83162
+      - m_Data: 83178
+      - m_Data: 83202
+      - m_Data: 83216
+      - m_Data: 83232
+      - m_Data: 83240
+      - m_Data: 83248
+      - m_Data: 83264
+      - m_Data: 83280
+      - m_Data: 83288
+      - m_Data: 83304
+      - m_Data: 83320
+      - m_Data: 83330
+      - m_Data: 83338
+      - m_Data: 83354
+      - m_Data: 83362
+      - m_Data: 83378
+      - m_Data: 83386
+      - m_Data: 83434
+      - m_Data: 83466
+      - m_Data: 83498
+      - m_Data: 83514
+      - m_Data: 83522
+      - m_Data: 83554
+      - m_Data: 83578
+      - m_Data: 83586
+      - m_Data: 83594
+      - m_Data: 83618
+      - m_Data: 83642
+      - m_Data: 83658
+      - m_Data: 83682
+      - m_Data: 83690
+      - m_Data: 83698
+      - m_Data: 83706
+      - m_Data: 83714
+      - m_Data: 83722
+      - m_Data: 83738
+      - m_Data: 83746
+      - m_Data: 83754
+      - m_Data: 83786
+      - m_Data: 83802
+      - m_Data: 83826
+      - m_Data: 83858
+      - m_Data: 83866
+      - m_Data: 83874
+      - m_Data: 83898
+      - m_Data: 83962
+      - m_Data: 83978
+      - m_Data: 83986
+      - m_Data: 84002
+      - m_Data: 84010
+      - m_Data: 84018
+      - m_Data: 84026
+      - m_Data: 84042
+      - m_Data: 84058
+      - m_Data: 84082
+      - m_Data: 84098
+      - m_Data: 84154
+      - m_Data: 84178
+      - m_Data: 84186
+      - m_Data: 84194
+      - m_Data: 84202
+      - m_Data: 84266
+      - m_Data: 84274
+      - m_Data: 84282
+      - m_Data: 84298
+      - m_Data: 84306
+      - m_Data: 84314
+      - m_Data: 84326
+      - m_Data: 84334
+      - m_Data: 84358
+      - m_Data: 84374
+      - m_Data: 84406
+      - m_Data: 84454
+      - m_Data: 84462
+      - m_Data: 84470
+      - m_Data: 99124
+      - m_Data: 99128
+      - m_Data: 99148
+      - m_Data: 160798
+      - m_Data: 162394
+      - m_Data: 162664
+      - m_Data: 164240
+      - m_Data: 164244
+      - m_Data: 164264
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1787,7 +2262,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Lua
+    - Packages/com.unity.collab-proxy/Editor/Views/Labels
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1797,37 +2272,42 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Resources/Lua
+  - Packages/com.unity.collab-proxy/Editor/Views/Labels
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Metropolia\Game Badges - Coding_Game Engines\project\MazeGame
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 791.3333}
     m_SelectedIDs:
-    - m_Data: 62168
+    - m_Data: 54436
     m_LastClickedID:
-      m_Data: 62168
+      m_Data: 54436
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 45692
-    - m_Data: 45696
-    - m_Data: 45698
-    - m_Data: 45700
-    - m_Data: 45702
-    - m_Data: 45704
-    - m_Data: 45708
-    - m_Data: 45710
-    - m_Data: 45712
-    - m_Data: 45714
-    - m_Data: 45716
-    - m_Data: 45718
-    - m_Data: 45720
-    - m_Data: 45722
-    - m_Data: 45724
-    - m_Data: 46058
+    - m_Data: 46684
+    - m_Data: 46686
+    - m_Data: 46688
+    - m_Data: 46690
+    - m_Data: 46692
+    - m_Data: 46694
+    - m_Data: 46696
+    - m_Data: 46698
+    - m_Data: 46700
+    - m_Data: 46702
+    - m_Data: 46704
+    - m_Data: 46706
+    - m_Data: 46708
+    - m_Data: 46710
+    - m_Data: 46712
+    - m_Data: 47032
+    - m_Data: 54422
+    - m_Data: 54430
+    - m_Data: 54438
+    - m_Data: 62420
     - m_Data: 1000000000
+    - m_Data: 2147483647
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1860,24 +2340,21 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 45692
-    - m_Data: 45694
-    - m_Data: 45696
-    - m_Data: 45698
-    - m_Data: 45700
-    - m_Data: 45702
-    - m_Data: 45704
-    - m_Data: 45706
-    - m_Data: 45708
-    - m_Data: 45710
-    - m_Data: 45712
-    - m_Data: 45714
-    - m_Data: 45716
-    - m_Data: 45718
-    - m_Data: 45720
-    - m_Data: 45722
-    - m_Data: 45724
-    - m_Data: 45726
+    - m_Data: 46684
+    - m_Data: 46686
+    - m_Data: 46688
+    - m_Data: 46690
+    - m_Data: 46692
+    - m_Data: 46694
+    - m_Data: 46696
+    - m_Data: 46698
+    - m_Data: 46700
+    - m_Data: 46702
+    - m_Data: 46704
+    - m_Data: 46706
+    - m_Data: 46708
+    - m_Data: 46710
+    - m_Data: 46712
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1916,8 +2393,8 @@ MonoBehaviour:
     - m_Data: 96990
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Editor
+      m_OriginalName: Editor
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
@@ -1925,10 +2402,10 @@ MonoBehaviour:
         width: 0
         height: 0
       m_UserData:
-        m_Data: 0
+        m_Data: 54426
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 10}

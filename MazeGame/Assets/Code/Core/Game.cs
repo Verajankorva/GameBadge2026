@@ -11,6 +11,7 @@ namespace MazeGame.Core
         public static StateMachine.Core.StateMachine m_gameStateMachine = null;
         public static GameController m_gameController = null;
         public static LevelController m_levelController = null;
+        public static IntroController m_introController = null;
         public static Player m_player = null;
         public static Enemy m_enemy = null;
         public static MazeGame.Maze.Maze m_maze = null;
